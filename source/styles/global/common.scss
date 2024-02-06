@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.page {
+	&__body {}
+}
+
+.container {
+
+	@media screen and (min-width: $desktop) {
+		padding: 0 80px;
+	}
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.link {
+	font-family: "manrope";
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+
+	&:hover {
+		opacity: .8;
+	}
+}

@@ -1,0 +1,21 @@
+@import './../global/variables.scss';
+
+.secondary-title {
+	font-size: 74px;
+	line-height: 84px;
+	margin: 0 0 80px 0;
+}
+
+.third-title {
+	font-size: 56px;
+	line-height: 70px;
+	margin: 0 0 50px 0;
+}
+
+.base-text {
+	font-size: 18px;
+	line-height: 32px;
+	font-family: $secondary-font;
+	margin: 0;
+	letter-spacing: 0.4px;
+}
