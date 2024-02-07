@@ -1,12 +1,9 @@
-@import './../global/variables.scss';
-
 footer {
-	background-color: rgb(232, 130, 130);
-	font-family: $primary-font;
-	
-	h2 {
-		color: blue;
-	}
+  background-color: rgb(232, 130, 130);
+  font-family: "roboto", "Arial", sans-serif;
+}
+footer h2 {
+  color: blue;
 }
 
 /* .footer {
@@ -80,7 +77,6 @@ footer {
 	font-weight: 700;
 	line-height: 70px;
 } */
-
 /* .footer__title.third-title {
 	margin-bottom: 0px;
 }
@@ -108,4 +104,4 @@ footer {
 	font-weight: 700;
 	line-height: 50px;
 	letter-spacing: -0.78px;
-} */
+} *//*# sourceMappingURL=footer.css.map */

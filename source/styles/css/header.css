@@ -1,13 +1,10 @@
-@import './../global/variables.scss';
-
 header {
-	background-color: rgb(193, 233, 132);
-	font-family: $primary-font;
-	h2 {
-		color: red
-	}
+  background-color: rgb(193, 233, 132);
+  font-family: "roboto", "Arial", sans-serif;
 }
-
+header h2 {
+  color: red;
+}
 
 /* .header {
 
@@ -34,4 +31,4 @@ header {
 		z-index: 1;
 		flex-grow: 1;
 	}
-} */
+} *//*# sourceMappingURL=header.css.map */
