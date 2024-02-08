@@ -1,34 +1,4 @@
 header {
   background-color: rgb(193, 233, 132);
   font-family: "roboto", "Arial", sans-serif;
-}
-header h2 {
-  color: red;
-}
-
-/* .header {
-
-	overflow: hidden;
-
-	.container {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 10%;
-		min-height: 120px;
-	}
-
-	.decors-circle {
-		position: absolute;
-		top: -455px;
-		left: -284px;
-
-	}
-
-	.logo {
-		position: relative;
-		z-index: 1;
-		flex-grow: 1;
-	}
-} *//*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

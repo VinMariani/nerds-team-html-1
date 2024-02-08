@@ -1,9 +1,8 @@
-@import './../global/variables.scss';
-
 .secondary-title {
-	font-size: 74px;
-	line-height: 84px;
+  font-size: 74px;
+  line-height: 84px;
 }
+
 /*
 .third-title {
 	font-size: 56px;
@@ -17,4 +16,4 @@
 	font-family: $secondary-font;
 	margin: 0;
 	letter-spacing: 0.4px;
-} */
+} *//*# sourceMappingURL=text.css.map */
