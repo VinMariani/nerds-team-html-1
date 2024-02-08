@@ -1,12 +1,31 @@
-$primary-font: 'gropled',
+$primary-font: 'roboto',
 'Arial',
 sans-serif;
+
 $secondary-font: 'manrope',
 'Roboto',
 sans-serif;
-$text-font: 'manrope',
-'Arial',
-sans-serif;
+
+$base-color-text: #000000;
+$base-color-background: #EEEEEE;
+
+$base-background-main: #FB565A;
+$base-background-main-focus: #E74246;
+$base-background-main-active: #D7373B;
+
+$base-background-button-dark: #00CA74;
+$base-background-button-dark-focus: #00BC6C;
+$base-background-button-dark-active: #00AA62;
+
+$base-background-button-light: #EFC849;
+$base-background-button-light-focus: #EAB534;
+$base-background-button-light-active: #E5A722;
+
+$base-background-button-filter-focus: #DFDFDF;
+$base-background-button-filter-active: #D5D5D5;
+
+$base-background-social: #E1E1E1;      
+$base-background-shape: #4D4D4D;
 
 $tablet: 768px;
 $desktop: 1680px;

@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.link {
+  font-family: "roboto";
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.link:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=common.css.map */
