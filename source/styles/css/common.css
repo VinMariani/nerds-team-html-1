@@ -5,6 +5,34 @@
           box-sizing: border-box;
 }
 
+.page__body {
+  font-family: "roboto", "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #EEEEEE;
+}
+.page__body .overlay.active {
+  /* background-color: $base-color-background-inverse; */
+  opacity: 0.8;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page__body.hidden {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 200px;
+}
 @media screen and (min-width: 1680px) {
   .container {
     padding: 0 80px;
@@ -18,7 +46,7 @@ img {
 }
 
 .link {
-  font-family: "roboto";
+  font-family: "roboto", "Arial", sans-serif;
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
