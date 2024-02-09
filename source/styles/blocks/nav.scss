@@ -10,7 +10,7 @@
 		max-width: 700px;
 		margin-left: 60px;
 		margin-right: 40px;
-	}
+  }
 
 	&__item {
 		font-size: 16px;
@@ -27,4 +27,22 @@
 	&__item a{
 		text-decoration: none;
 	}
+
+  &__link:hover {
+    color: $base-background-main;
+  }
+
+  &__link:active,
+  &__link:focus {
+    color: $base-color-text;
+    opacity: 30%;
+  }
+
+  &__link-current {
+    color: $base-color-text;
+    border-bottom: 2px solid $base-background-main;
+    padding-bottom: 22px;
+    opacity: 100%;
+    pointer-events: none;
+  }
 }

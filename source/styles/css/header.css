@@ -28,24 +28,23 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-.user-navigation__button {
-  font-family: "roboto", "Arial", sans-serif;
+.user-navigation__item {
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
-  width: 130px;
-  border: none;
   text-transform: uppercase;
-  cursor: pointer;
-  padding-left: 25px;
   position: relative;
+  padding-left: 20px;
 }
-.user-navigation__button::before {
+.user-navigation__item::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   background-image: url("./../../images/icons/cart-icon.svg");
   top: 8px;
-  left: 0px;
+  left: -18px;
+}
+.user-navigation__item a {
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

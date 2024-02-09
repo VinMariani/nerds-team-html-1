@@ -23,4 +23,18 @@
 }
 .navigation__item a {
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: #FB565A;
+}
+.navigation__link:active, .navigation__link:focus {
+  color: #000000;
+  opacity: 30%;
+}
+.navigation__link-current {
+  color: #000000;
+  border-bottom: 2px solid #FB565A;
+  padding-bottom: 22px;
+  opacity: 100%;
+  pointer-events: none;
 }/*# sourceMappingURL=nav.css.map */
