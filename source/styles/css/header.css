@@ -15,7 +15,10 @@ header {
           align-items: center;
   padding-top: 49px;
 }
-.header__logo {
-  width: 160px;
-  height: 66px;
+.header__link:hover svg path {
+  cursor: pointer;
+  opacity: 70%;
+}
+.header__link:active svg path, .header__link:focus svg path {
+  opacity: 30%;
 }/*# sourceMappingURL=header.css.map */

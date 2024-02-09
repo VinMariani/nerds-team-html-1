@@ -13,8 +13,13 @@ header {
 		padding-top: 49px;
 	}
 
-	&__logo {
-		width: 160px;
-		height: 66px;
+	&__link:hover svg path {
+		cursor: pointer;
+		opacity: 70%;
+	}
+
+	&__link:active svg path, 
+		&__link:focus svg path	{
+		opacity: 30%;
 	}
 }
