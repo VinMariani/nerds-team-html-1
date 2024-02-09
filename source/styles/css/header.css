@@ -20,35 +20,6 @@ header {
   height: 66px;
 }
 
-.navigation__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 700px;
-  margin-left: 60px;
-  margin-right: 40px;
-  /* margin-left: 202px;
-  margin-right: 246px; */
-}
-.navigation__item {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-right: 45px;
-}
-.navigation__item:last-child {
-  margin-right: 0;
-}
-.navigation__item a {
-  text-decoration: none;
-}
-
 .user-navigation__list {
   list-style: none;
   margin: 0;

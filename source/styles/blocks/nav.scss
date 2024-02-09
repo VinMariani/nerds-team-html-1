@@ -1,3 +1,30 @@
 @import './../global/variables.scss';
 
-.nav {}
+.navigation {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 700px;
+		margin-left: 60px;
+		margin-right: 40px;
+	}
+
+	&__item {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin-right: 45px;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__item a{
+		text-decoration: none;
+	}
+}
