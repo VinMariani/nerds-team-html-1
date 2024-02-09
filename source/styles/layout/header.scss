@@ -1,6 +1,81 @@
 @import './../global/variables.scss';
 
 header {
-	background-color: rgb(193, 233, 132);
-	font-family: $primary-font;
+	background-color: $base-color-background;
+	min-height: 65px;
+}
+
+.header {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 49px;
+	}
+
+	&__logo {
+		width: 160px;
+		height: 66px;
+	}
+}
+
+.navigation {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		
+		flex-wrap: wrap;
+		/* margin-left: 202px;
+		margin-right: 246px; */
+	}
+
+	&__item {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin-right: 45px;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__item a{
+		text-decoration: none;
+	}
+}
+
+.user-navigation {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	&__button {
+		font-family: $primary-font;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		width: 130px;
+		border: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding-left: 25px;
+		position: relative;
+	}
+
+	&__button::before {
+		content:'';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		background-image: url('./../../images/icons/cart-icon.svg');
+		top: 8px;
+		left: 0px;
+	}
 }
