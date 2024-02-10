@@ -1,11 +1,9 @@
 @import './../global/variables.scss';
 
-header {
+.header {
 	background-color: $base-color-background;
 	min-height: 65px;
-}
 
-.header {
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -13,13 +11,12 @@ header {
 		padding-top: 49px;
 	}
 
-	&__link:hover svg path {
+	&__logo:hover path {
 		cursor: pointer;
 		opacity: 70%;
 	}
 
-	&__link:active svg path, 
-		&__link:focus svg path	{
+	&__logo:focus path {
 		opacity: 30%;
 	}
 }

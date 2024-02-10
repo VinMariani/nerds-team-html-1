@@ -1,8 +1,7 @@
-header {
+.header {
   background-color: #EEEEEE;
   min-height: 65px;
 }
-
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,10 +14,10 @@ header {
           align-items: center;
   padding-top: 49px;
 }
-.header__link:hover svg path {
+.header__logo:hover path {
   cursor: pointer;
   opacity: 70%;
 }
-.header__link:active svg path, .header__link:focus svg path {
+.header__logo:focus path {
   opacity: 30%;
 }/*# sourceMappingURL=header.css.map */
