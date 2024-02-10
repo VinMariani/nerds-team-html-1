@@ -19,6 +19,8 @@
 
   &__item a{
 		text-decoration: none;
+		padding-left: 34px;
+		padding-bottom: 22px;
 	}
 
   &__link {
@@ -32,7 +34,7 @@
     height: 15px;
     background-image: url('./../../images/icons/cart-icon.svg');
 		top: 2px;
-		left: -40px;
+		left: -4px;
   }
 
   &__link:hover {
@@ -49,14 +51,4 @@
   &__link:active::before {
     opacity: 100%;
   }
-
-  /* &__item::after {
-		content:'';
-		position: absolute;
-		width: 15px;
-		height: 15px;
-		background-image: url('./../../images/icons/cart-icon.svg');
-		top: 8px;
-		left: -18px;
-	} */
 }
