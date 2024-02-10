@@ -1,6 +1,6 @@
 @import './../global/variables.scss';
 
 footer {
-	background-color: rgb(232, 130, 130);
-	font-family: $primary-font;
+	min-height: 223px;
+	background-color: $base-color-background;
 }
