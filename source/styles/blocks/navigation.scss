@@ -39,10 +39,13 @@
 		opacity: 30%;
 	}
 
+	&__link:visited {
+		color: $base-color-text;
+	}
+
 	&__link-current {
 		color: $base-color-text;
 		border-bottom: 2px solid $base-background-main;
-		/* padding-bottom: 22px; */
 		opacity: 100%;
 		pointer-events: none;
 	}

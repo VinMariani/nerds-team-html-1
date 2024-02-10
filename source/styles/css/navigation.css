@@ -32,10 +32,12 @@
   color: #000000;
   opacity: 30%;
 }
+.navigation__link:visited {
+  color: #000000;
+}
 .navigation__link-current {
   color: #000000;
   border-bottom: 2px solid #FB565A;
-  /* padding-bottom: 22px; */
   opacity: 100%;
   pointer-events: none;
 }/*# sourceMappingURL=navigation.css.map */
