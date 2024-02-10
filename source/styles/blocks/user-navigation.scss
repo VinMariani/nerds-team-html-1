@@ -43,9 +43,7 @@
 
   &__link:active,
   &__link:focus {
-    /* color: $base-color-text;
-    opacity: 30%; */
-    color: rgba(0,0,0,0.3); 
+		color: $special-color-icons; 
   }
 
   &__link:active::before {

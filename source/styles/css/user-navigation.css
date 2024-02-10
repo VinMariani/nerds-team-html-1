@@ -35,8 +35,6 @@
   color: #FB565A;
 }
 .user-navigation__link:active, .user-navigation__link:focus {
-  /* color: $base-color-text;
-  opacity: 30%; */
   color: rgba(0, 0, 0, 0.3);
 }
 .user-navigation__link:active::before {
