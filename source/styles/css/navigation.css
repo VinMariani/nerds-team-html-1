@@ -25,15 +25,15 @@
   text-decoration: none;
   padding-bottom: 22px;
 }
+.navigation__link:visited {
+  color: #000000;
+}
 .navigation__link:hover {
   color: #FB565A;
 }
 .navigation__link:active, .navigation__link:focus {
   color: #000000;
   opacity: 30%;
-}
-.navigation__link:visited {
-  color: #000000;
 }
 .navigation__link-current {
   color: #000000;

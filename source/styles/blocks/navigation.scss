@@ -29,6 +29,10 @@
 		padding-bottom: 22px;
 	}
 
+	&__link:visited {
+		color: $base-color-text;
+	}
+
 	&__link:hover {
 		color: $base-background-main;
 	}
@@ -39,9 +43,7 @@
 		opacity: 30%;
 	}
 
-	&__link:visited {
-		color: $base-color-text;
-	}
+	
 
 	&__link-current {
 		color: $base-color-text;
