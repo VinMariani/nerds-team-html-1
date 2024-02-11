@@ -1,4 +1,10 @@
-footer {
+.footer {
   min-height: 223px;
   background-color: #EEEEEE;
+}
+
+.footer-social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=footer.css.map */

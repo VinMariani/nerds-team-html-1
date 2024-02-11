@@ -1,6 +1,14 @@
 @import './../global/variables.scss';
 
-footer {
+.footer {
 	min-height: 223px;
 	background-color: $base-color-background;
+}
+
+.footer-social {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 }
