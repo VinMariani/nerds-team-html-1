@@ -1,6 +1,23 @@
 @import './../global/variables.scss';
 
-header {
-	background-color: rgb(193, 233, 132);
-	font-family: $primary-font;
+.header {
+	background-color: $base-color-background;
+	min-height: 65px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 49px;
+	}
+
+	&__logo:hover path {
+		cursor: pointer;
+		opacity: 70%;
+	}
+
+	&__logo:focus path,
+	&__logo:active path {
+		opacity: 30%;
+	}
 }

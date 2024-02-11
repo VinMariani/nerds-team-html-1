@@ -1,0 +1,56 @@
+@import './../global/variables.scss';
+
+.user-navigation {
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+
+	&__item {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		position: relative;
+		padding-left: 20px;
+	}
+
+  &__item a{
+		text-decoration: none;
+		padding-left: 34px;
+		padding-bottom: 22px;
+	}
+
+  &__link {
+    position: relative;
+  }
+
+  &__link::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url('./../../images/icons/cart-icon.svg');
+		top: 2px;
+		left: -4px;
+  }
+
+	&__link:visited {
+		color: $base-color-text;
+	}
+
+  &__link:hover {
+    color: $base-background-main;
+  }
+
+  &__link:active,
+  &__link:focus {
+		color: $special-color-icons; 
+  }
+
+  &__link:active::before {
+    opacity: 100%;
+  }
+}
