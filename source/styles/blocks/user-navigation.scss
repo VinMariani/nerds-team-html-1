@@ -37,6 +37,10 @@
 		left: -4px;
   }
 
+	&__link:visited {
+		color: $base-color-text;
+	}
+
   &__link:hover {
     color: $base-background-main;
   }
