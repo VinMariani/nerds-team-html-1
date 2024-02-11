@@ -5,7 +5,14 @@
           box-sizing: border-box;
 }
 
+.page {
+  height: 100%;
+}
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #000000;
