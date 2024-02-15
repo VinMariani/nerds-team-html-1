@@ -43,7 +43,15 @@
   padding: 17px 50px;
   display: block;
   max-width: 240px;
+  border-radius: 3px;
   position: relative;
+}
+.slider__item-btn:hover, .slider__item-btn:focus {
+  background-color: #E74246;
+}
+.slider__item-btn:active {
+  background-color: #D7373B;
+  color: rgba(250, 250, 250, 0.3);
 }
 
 /*Пагинация*/
@@ -72,7 +80,7 @@
   margin-right: 0;
 }
 
-.active::before {
+.slider-active::before {
   content: "";
   position: absolute;
   width: 8px;
