@@ -11,12 +11,12 @@
 }
 .slider__item {
   min-height: 431px;
-  background-image: url("./../../images/decors/slider/slide-1.png");
+  background-image: url("./../../images/decors/slider/slide-2.png");
   background-repeat: no-repeat;
   background-position: right;
 }
-.slider__item-desc {
-  max-width: 400px;
+.slider__item-wrapper {
+  max-width: 515px;
 }
 .slider__item-title {
   margin: 0;
@@ -25,8 +25,10 @@
   font-weight: 500;
   line-height: 55px;
   margin-bottom: 26px;
+  text-align: center;
 }
 .slider__item-text {
+  max-width: 416px;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -41,25 +43,20 @@
   padding: 17px 50px;
   display: block;
   max-width: 240px;
+  position: relative;
 }
 
 /*Пагинация*/
-.slider-pagination__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.slider-pagination__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 317px;
   left: 50%;
-}
-.slider-pagination__item {
-  margin-right: 17px;
-}
-.slider-pagination__item:last-child {
-  margin-right: 0;
 }
 .slider-pagination__btn {
   width: 18px;
@@ -69,11 +66,19 @@
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+  margin-right: 17px;
 }
-.slider-pagination__btn:hover {
-  border: 3px solid #C1C1C1;
+.slider-pagination__btn:last-child {
+  margin-right: 0;
 }
-.slider-pagination__active {
-  padding: 5px;
-  border: 3px solid #C1C1C1;
+
+.active::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #C1C1C1;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
 }/*# sourceMappingURL=slider.css.map */

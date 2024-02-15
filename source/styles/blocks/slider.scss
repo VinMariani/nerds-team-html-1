@@ -13,13 +13,13 @@
 
   &__item {
     min-height: 431px;
-    background-image: url('./../../images/decors/slider/slide-1.png');
+    background-image: url('./../../images/decors/slider/slide-2.png');
     background-repeat: no-repeat;
     background-position: right;
   }
 
-  &__item-desc {
-    max-width: 400px;
+  &__item-wrapper {
+    max-width: 515px;
   }
 
   &__item-title {
@@ -29,9 +29,11 @@
     font-weight: 500;
     line-height: 55px;
     margin-bottom: 26px;
+    text-align: center;
   }
 
   &__item-text {
+    max-width: 416px;
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -47,27 +49,18 @@
     padding: 17px 50px;
     display: block;
     max-width: 240px;
+    position: relative;
   }
 }
 
 /*Пагинация*/
 .slider-pagination {
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  &__wrapper {
     display: flex;
+    align-items: center;
     position: absolute;
     top: 317px;
     left: 50%;
-  }
-
-  &__item {
-    margin-right: 17px;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
   }
 
   &__btn {
@@ -78,14 +71,21 @@
     border-radius: 50%;
     cursor: pointer;
     position: relative;
+    margin-right: 17px;
   }
 
-  &__btn:hover {
-    border: 3px solid $special-color-pagination-btn;
+  &__btn:last-child {
+    margin-right: 0;
   }
+}
 
-  &__active {
-    padding: 5px;
-    border: 3px solid $special-color-pagination-btn;
-  }
+.active::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid $special-color-pagination-btn;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
 }
