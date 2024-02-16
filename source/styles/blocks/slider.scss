@@ -1,0 +1,109 @@
+@import './../global/variables.scss';
+
+.slider {
+  background-color: $base-color-background;
+  position: relative;
+
+  &__list {
+    min-height: 431px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__item-active {
+    width: 100%;
+    min-height: 431px;
+    background-image: url('./../../images/decors/slider/slide-2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    opacity: 1;
+  }
+
+  &__item {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__item-wrapper {
+    max-width: 515px;
+  }
+
+  &__item-title {
+    margin: 0;
+    padding-top: 70px;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 26px;
+  }
+
+  &__item-text {
+    max-width: 416px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+
+  &__item-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $base-background-main;
+    color: $light-color-text;
+    padding: 17px 50px;
+    display: block;
+    max-width: 240px;
+    border-radius: 3px;
+  }
+
+  &__item-btn:hover,
+  &__item-btn:focus {
+    background-color: $base-background-main-focus;
+  }
+
+  &__item-btn:active {
+    background-color: $base-background-main-active;
+    color: $special-color-icons;
+  }
+}
+
+/*Пагинация*/
+.slider-pagination {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 317px;
+    left: 50%;
+  }
+
+  &__btn {
+    width: 18px;
+    height: 18px;
+    background-color: $light-color-text;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 17px;
+  }
+
+  &__btn:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider-pagination-active::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid $special-color-pagination-btn;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}

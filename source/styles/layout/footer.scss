@@ -2,8 +2,7 @@
 
 .footer {
 	min-height: 223px;
-	border: 1px solid red;
-	
+		
 	&__wrapper {
 		padding-top: 68px;
 		display: flex;
@@ -41,8 +40,7 @@
 		background-color: $base-background-social;
 	}
 
-	&__item a:hover,
-	&__item a:focus {
+	&__item a:hover {
 		background-color: $base-background-main-focus;
 	}
 
