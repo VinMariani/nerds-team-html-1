@@ -1,0 +1,64 @@
+@import './../global/variables.scss';
+
+
+.map {
+  min-height: 416px;
+  background-color: $base-color-background;
+
+  &__wrapper {
+    min-height: 416px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.map-contacts {
+  &__box {
+    max-width: 319px;
+    min-height: 308px;
+    background-color: $light-color-text;
+    margin-right: 0;
+    border: 2px solid green;
+    padding: 47px 50px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__address {
+    font-style: inherit;
+    margin-bottom: 37px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    text-decoration: none;
+    color: $base-color-text;
+  }
+
+  &__btn {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: $base-background-main;
+    color: $light-color-text;
+    padding: 17px 42px;
+    display: block;
+    max-width: 219px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
