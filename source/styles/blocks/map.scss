@@ -87,6 +87,10 @@
   height: 100%;
 }
 
+.modal-active {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -231,6 +235,15 @@
     border-radius: 3px;
     border: none;
     cursor: pointer;
+  }
 
+  &__btn:hover,
+  &__btn:focus {
+    background-color: $base-background-main-focus;
+  }
+
+  &__btn:active {
+    background-color: $base-background-main-active;
+    color: $special-color-icons;
   }
 }
