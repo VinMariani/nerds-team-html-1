@@ -107,10 +107,17 @@
     height: 21px;
     background-color: transparent;
     border: none;
-    background-image: url('./../../images/icons/close-cross.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
     cursor: pointer;
+  }
+
+  &__close-img:hover path {
+    fill: $base-background-main;
+    fill-opacity: 100%;
+  }
+
+  &__close-img:active path {
+    fill: $base-background-main;
+    fill-opacity: 10%;
   }
 
   &__title {
