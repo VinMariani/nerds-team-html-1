@@ -3,22 +3,37 @@
 
 .map {
   min-height: 416px;
+  background-image: url('./../../images/map.png');
+  background-repeat: no-repeat;
+  background-position: center 0;
   background-color: $base-color-background;
+  position: relative;
 
   &__wrapper {
     min-height: 416px;
-    display: flex;
-    align-items: center;
+    position: relative;
+  }
+
+  &__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 231px;
+    height: 190px;
+    background-image: url('./../../images/icons/map-marker.svg');
+    top: 20px;
+    right: 220px;
+    
   }
 }
 
 .map-contacts {
   &__box {
+    position: absolute;
+    top: 54px;
     max-width: 319px;
     min-height: 308px;
     background-color: $light-color-text;
     margin-right: 0;
-    border: 2px solid green;
     padding: 47px 50px;
   }
 

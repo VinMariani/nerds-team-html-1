@@ -1,23 +1,32 @@
 .map {
   min-height: 416px;
+  background-image: url("./../../images/map.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
   background-color: #EEEEEE;
+  position: relative;
 }
 .map__wrapper {
   min-height: 416px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+}
+.map__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  background-image: url("./../../images/icons/map-marker.svg");
+  top: 20px;
+  right: 220px;
 }
 
 .map-contacts__box {
+  position: absolute;
+  top: 54px;
   max-width: 319px;
   min-height: 308px;
   background-color: #ffffff;
   margin-right: 0;
-  border: 2px solid green;
   padding: 47px 50px;
 }
 .map-contacts__title {
