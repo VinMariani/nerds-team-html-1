@@ -16,8 +16,8 @@
   width: 231px;
   height: 190px;
   background-image: url("./../../images/icons/map-marker.svg");
-  top: 20px;
-  right: 220px;
+  top: 18%;
+  right: 20%;
 }
 
 .map-contacts__box {
