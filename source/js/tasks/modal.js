@@ -10,6 +10,5 @@ const modal = document.querySelector('.modal-container');
         modal.classList.add('modal-close');
     }
     let buttonCloseModal = document.querySelector('.modal__close-btn');
-    let bodyCloseModal = document.querySelector('.modal-container');
-        buttonCloseModal.addEventListener('click', closeModal);
-        bodyCloseModal.addEventListener('click', closeModal);
+      buttonCloseModal.addEventListener('click', closeModal);
+        
