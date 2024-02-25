@@ -37,8 +37,7 @@
 		color: $base-background-main;
 	}
 
-	&__link:active,
-	&__link:focus {
+	&__link:active {
 		color: $base-color-text;
 		opacity: 30%;
 	}
