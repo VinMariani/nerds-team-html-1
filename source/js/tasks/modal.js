@@ -1,15 +1,24 @@
 const modal = document.querySelector('.modal-container');
-    //Открытие модального окна
-    const openModal = () => {
-        modal.classList.remove('modal-close');
+export function createModal() {
+    if (modal) {
+        const openModal = document.querySelector('.map-contacts__btn');
+        const closeModal = document.querySelector('.modal__close-btn');
+
+        openModal.addEventListener('click', function() { 
+            modal.style.display = 'block';
+        });
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+        document.addEventListener('keyup', (e) => {
+            if(e.key === 'Escape') {
+                modal.style.display = 'none';
+            }
+        })
     }
-    let buttonOpenModal = document.querySelector('.map-contacts__btn');
-        buttonOpenModal.addEventListener('click', openModal);
-    //Закрытие модального окна
-    const closeModal = () => {
-        modal.classList.add('modal-close');
-    }
-    let buttonCloseModal = document.querySelector('.modal__close-btn');
-        buttonCloseModal.addEventListener('click', closeModal);
-    
-     /*  modal.addEventListener('click', closeModal); */
+}

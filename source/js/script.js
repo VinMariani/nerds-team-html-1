@@ -3,15 +3,21 @@ import {
 }
 from "./tasks/slider.js";
 
-import {
+/* import {
 	modal
 }
-from "./tasks/modal.js";
+from "./tasks/modal.js"; */
 
 
 document.addEventListener('DOMContentLoaded', () => {
 	slider();
-	modal();
+	//modal();
 })
 
+
+import { createModal } from "./tasks/modal.js";
+
+document.addEventListener('DOMContentLoaded', () => {
+	createModal();
+});
 
