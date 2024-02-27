@@ -1,19 +1,8 @@
-import {
-	slider
-}
-from "./tasks/slider.js";
-
-/* import {
-	modal
-}
-from "./tasks/modal.js"; */
-
+import { slider} from "./tasks/slider.js";
 
 document.addEventListener('DOMContentLoaded', () => {
 	slider();
-	//modal();
 })
-
 
 import { createModal } from "./tasks/modal.js";
 
