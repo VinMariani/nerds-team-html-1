@@ -1,0 +1,132 @@
+.about__block {
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style: none;
+  }
+
+.about__heading {
+    max-width: 650px;
+    max-height: 91px;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.about__list li {
+    position: relative;
+    list-style-type: none;
+  }
+  
+  li::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: rgba(251, 86, 90, 1);
+    position: absolute;
+    left: -25px;
+    top: 11px;
+    transform: translate(-50%);
+  }
+
+.about__list-heading {
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.about__list-item {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+
+.about__text {
+    max-width: 646px;
+    max-height: 49px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.stat__list {
+    padding-inline-start: 0%;
+}
+
+.stat__list_item {
+    display: inline-block;
+    width: 119px;
+    height: 37px;
+}
+
+.stat__heading {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.stat__percent {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 700;
+    width: 78px;
+    height: 64px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.percent {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    width: 20px;
+    height: 40px;
+    margin-left: 0;
+}
+
+.stat__text {
+    width: 119px;
+    height: 37px;
+    color: rgb(40, 49, 54);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
