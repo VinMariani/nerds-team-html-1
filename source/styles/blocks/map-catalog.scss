@@ -1,0 +1,9 @@
+.map_catalog {
+    min-height: 416px;
+    background-image: url('./../../images/map-2.png');
+    background-repeat: no-repeat;
+    // background-size: 100% auto; - сжимается ширина
+    background-size: contain;
+    background-position-x: center;
+    // width: 100%; 
+}
