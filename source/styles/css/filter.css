@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./../../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("./../../fonts/roboto/Roboto-Regular.woff") format("woff"), url("./../../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./../../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("./../../fonts/roboto/Roboto-Medium.woff") format("woff"), url("./../../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "roboto";
+  font-weight: 700;
+  font-style: bold;
+  src: url("./../../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("./../../fonts/roboto/Roboto-Bold.woff") format("woff"), url("./../../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+.filter {
+  /* margin-top: 55px;
+  margin-left: 140px; */
+}
+.filter__wrapper {
+  display: grid;
+}
+.filter__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.filter__price-ranger, .filter__template-type, .filter__feature {
+  max-width: 260px;
+  border: none;
+}
+.filter__teplate-list, .filter__feature-list, .filter__sort-types__list, .filter__sort-list {
+  list-style-type: none;
+  list-style-position: inside;
+  padding-left: 0;
+}
+.filter__price-from {
+  color: rgb(40, 49, 54);
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.filter__price-to {
+  color: rgb(40, 49, 54);
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.filter__line-active {
+  width: 140px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 250px;
+  left: 176px;
+  background-color: rgb(0, 202, 116);
+}
+.filter__line-noactive {
+  width: 67px;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 250px;
+  left: 325px;
+  background-color: gray;
+}
+.filter__price-ranger__button-1 {
+  position: absolute;
+  top: 240px;
+  left: 175px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  z-index: 1;
+}
+.filter__price-ranger__button-2 {
+  position: absolute;
+  top: 240px;
+  left: 315px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  z-index: 1;
+}
+.filter__input__field-min, .filter__input__field-max {
+  font-family: Roboto;
+  border-radius: 3px;
+  border: none;
+  background: rgb(238, 238, 238);
+  max-width: 80px;
+  min-height: 36px;
+  text-align: center;
+  margin-left: 8px;
+  padding: 0;
+}
+.filter__price-to {
+  margin-left: 30px;
+}
+.filter__price-ranger__block-1 {
+  width: 260px;
+  height: 80px;
+  border-radius: 3px;
+  background: rgb(238, 238, 238);
+  border: none;
+  margin-bottom: 14px;
+}
+.filter__price-ranger__block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.filter__template-item, .filter__feature-item {
+  color: rgb(40, 49, 54);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.filter__button-accept {
+  font-family: Roboto;
+  border-radius: 3px;
+  background: rgb(238, 238, 238);
+  width: 260px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.filter__sort-button {
+  font-family: Roboto;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+}
+
+.filter-header {
+  background-color: #EEEEEE;
+}
+.filter-header__title {
+  margin: 0;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  padding: 87px 0 108px 0;
+}/*# sourceMappingURL=filter.css.map */

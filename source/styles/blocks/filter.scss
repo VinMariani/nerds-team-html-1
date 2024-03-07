@@ -2,9 +2,12 @@
 @import './../global/fonts.scss';
 
 .filter {
-    margin-top: 55px;
-    margin-left: 140px;
+    /* margin-top: 55px;
+    margin-left: 140px; */
     
+    &__wrapper {
+    display: grid;
+    }
 
     &__title {
         font-size: 18px;
@@ -170,4 +173,23 @@
 
 
 
+}
+
+.filter-sort__ {
+    &__wrapper {
+        
+    }
+}
+
+.filter-header {
+    background-color: $base-color-background;
+
+    &__title {
+        margin: 0;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 55px;
+        text-align: center;
+        padding: 87px 0 108px 0;
+    }
 }
