@@ -193,3 +193,16 @@
         padding: 87px 0 108px 0;
     }
 }
+
+.filter-pagination {
+    grid-area: pagin;
+    margin-bottom: 60px;
+    border: 2px solid rgb(7, 108, 39);
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+}
