@@ -2,9 +2,18 @@
 @import './../global/fonts.scss';
 
 .filter {
-    margin-top: 55px;
-    margin-left: 140px;
+    /* margin-top: 55px;
+    margin-left: 140px; */
     
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: 
+        'form sort sort'
+        'form card card'
+        'form pagin pagin';
+    }
 
     &__title {
         font-size: 18px;
@@ -157,7 +166,52 @@
         cursor: pointer;
     }
 
-    &__sort-button {
+}
+
+.filter-header {
+    background-color: $base-color-background;
+
+    &__title {
+        margin: 0;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 55px;
+        text-align: center;
+        padding: 87px 0 108px 0;
+    }
+}
+
+.filter-form {
+    grid-area: form;
+    margin-right: 124px;
+    width: 260px;
+    background-color: #faf4b6;
+}
+
+.filter-sort {
+    &__wrapper {
+        grid-area: sort;
+        display: flex;
+        background-color: #c2f4be;
+    }
+
+    &__types {
+        display: flex;
+        border: 2px solid rgb(102, 40, 236);
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__button {
         font-family: Roboto;
         color: rgb(0, 0, 0);
         font-size: 14px;
@@ -167,7 +221,54 @@
         border: none;
         background: none;
     }
+}
 
+.filter-icons {
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-left: auto;
+    }
+}
 
+.filter-cards {
+    grid-area: card;
+    margin-bottom: 55px;
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -32px;
+    }
 
+    &__item {
+        width: 358px;
+        height: 618px;
+        margin-right: 40px;
+        margin-bottom: 32px;
+        padding-top: 40px;
+        border: 2px solid red;
+    }
+    
+    &__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+.filter-pagination {
+    grid-area: pagin;
+    margin-bottom: 60px;
+    border: 2px solid rgb(7, 108, 39);
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
 }
