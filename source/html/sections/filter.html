@@ -5,7 +5,7 @@
 	<div class="container">
 		<h2 class="visually-hidden">Выбор макета</h2>
 		<div class="filter__wrapper">
-			<form action="#" method="get">
+			<form class="filter-form" action="#" method="get">
 
 							<!-- слайдер стоимости -->
 				<fieldset class="filter__price-ranger">
@@ -67,42 +67,70 @@
 					<button class="filter__button filter__button-accept" type="submit">Показать</button>
 				</div>
 			</form>
-			<div class="filter-sort__wrapper">
+			<div class="filter-sort filter-sort__wrapper">
 				<!-- сортировка выбранных макетов-->
-				<div class="filter__sort-types">
-					<h2 class="filter__title">Сoртировать:</h2>
-					<ul class="filter__sort-types__list">
-						<li class="filter__sort-types__item">
-							<button class="filter__sort-button filter__button-price" type="button">По цене</button>
+				<div class="filter-sort__types">
+					<h2 class="filter-sort__title">Сoртировать:</h2>
+					<ul class="filter-sort__list">
+						<li class="filter-sort__item">
+							<button class="filte-sort__button filter__button-price" type="button">По цене</button>
 						</li>
-						<li class="filter__sort-types__item">
-							<button class="filter__sort-button filter__button-type" type="button">По типу</button>
+						<li class="filter-sort__item">
+							<button class="filter-sort__button filter__button-type" type="button">По типу</button>
 						</li>
-						<li class="filter__sort-types__item">
-							<button class="filter__sort-button filter__button-name" type="button">По названию</button>
+						<li class="filter-sort__item">
+							<button class="filter-sort__button filter__button-name" type="button">По названию</button>
 						</li>
 					</ul>
 				</div>
 
 				<!-- сортировка выбранных макетов 2-->
-				<div class="filter__sort">
-					<h2 class="visually-hidden">Сoртировать:</h2>
-					<ul class="filter__sort-list">
-						<li class="filter__sort-item">
-							<button class="filter__button filter__button-up" type="button"><span class="visually-hidden">По убыванию</span></button>
-						</li>
-						<li class="filter__sort-item">
-							<button class="filter__button filter__button-down" type="button"><span class="visually-hidden">По возрастанию</span></button>
-						</li>
-					</ul>
-				</div>
+				<ul class="filter-icons filter-icons__list">
+					<li class="filter-icons__item">
+						<button class="filter__button filter__button-up" type="button"><span class="visually-hidden">По убыванию</span></button>
+					</li>
+					<li class="filter-icons__item">
+						<button class="filter__button filter__button-down" type="button"><span class="visually-hidden">По возрастанию</span></button>
+					</li>
+				</ul>
 			</div>
 			<!-- Карточка товаров -->
-			<div class="filter-card__wrapper">
-				
-			</div>	
+			<div class="filter-cards">
+					<ul class="filter-cards__list">
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-1.png" alt="Шаблон магазина Седона" width="358" height="577">
+							</a>
+						</li>
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-2.png" alt="Шаблон магазина Пинк" width="358" height="578">
+							</a>
+						</li>
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-3.png" alt="Шаблон магазина Барбершоп" width="358" height="578">
+							</a>
+						</li>
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-4.png" alt="Шаблон магазина Мишка" width="358" height="578">
+							</a>
+						</li>
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-5.png" alt="Шаблон магазина Аплюс" width="358" height="578">
+							</a>
+						</li>
+						<li class="filter-cards__item">
+							<a href="#">
+								<img src="./../../images/decors/template-6.png" alt="Шаблон магазина Квас" width="358" height="578">
+							</a>
+						</li>
+					</ul>
+			</div>
 			<!-- Пагинация -->
-			<div class="filter filter-pagination">
+			<div class="filter-pagination">
 				<ol class="filter-pagination__list">
 					<li>1</li>
 					<li>2</li>
