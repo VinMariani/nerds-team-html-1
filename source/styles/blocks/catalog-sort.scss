@@ -1,6 +1,6 @@
 @import './../global/variables.scss';
 
-.filter-sort {
+.catalog-sort {
   &__wrapper {
       grid-area: sort;
       display: flex;
@@ -35,7 +35,7 @@
   }
 }
 
-.filter-icons {
+.catalog-icons {
   &__list {
       list-style-type: none;
       margin: 0;

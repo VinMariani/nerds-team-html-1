@@ -1,6 +1,8 @@
 @import './../global/variables.scss';
 
-.filter {
+.catalog-form {
+    grid-area: form;
+
   &__price-ranger,
   &__template-type,
   &__feature {
@@ -144,10 +146,4 @@
       cursor: pointer;
   }
 
-}
-
-.filter-form {
-  grid-area: form;
-  /* margin-right: 124px; */
-  background-color: #faf4b6;
 }
