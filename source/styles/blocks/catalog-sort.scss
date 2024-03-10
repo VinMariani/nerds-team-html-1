@@ -1,0 +1,46 @@
+@import './../global/variables.scss';
+
+.filter-sort {
+  &__wrapper {
+      grid-area: sort;
+      display: flex;
+      background-color: #c2f4be;
+  }
+
+  &__types {
+      display: flex;
+      border: 2px solid rgb(102, 40, 236);
+  }
+
+  &__title {
+      margin: 0;
+  }
+
+  &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+
+  &__button {
+      font-family: Roboto;
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      line-height: 18px;
+      text-align: left;
+      text-transform: uppercase;
+      border: none;
+      background: none;
+  }
+}
+
+.filter-icons {
+  &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: auto;
+  }
+}

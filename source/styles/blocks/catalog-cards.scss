@@ -1,0 +1,22 @@
+@import './../global/variables.scss';
+
+.filter-cards {
+  grid-area: card;
+  margin-bottom: 55px;
+  
+  &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 42px;
+      margin-bottom: -32px;
+  }
+
+  &__item {
+      padding-top: 40px;
+      margin-bottom: 32px;
+      border: 2px solid red;
+  }
+}
