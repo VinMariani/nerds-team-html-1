@@ -1,128 +1,128 @@
 <section class="filter">
-	<header class="filter-header">
-		<h1 class="filter-header__title">Магазин готовых шаблонов</h1>
+	<header class="filter__header">
+		<h1 class="filter__header-title">Магазин готовых шаблонов</h1>
 	</header>
 	<div class="container">
 		<h2 class="visually-hidden">Выбор макета</h2>
 		<div class="filter__wrapper">
-			<form class="filter-form" action="#" method="get">
+			<form class="catalog-form" action="#" method="get">
 
 							<!-- слайдер стоимости -->
-				<fieldset class="filter__price-ranger">
-					<legend class="filter__title">Стоимость:</legend>
-					<div class="filter__price-ranger__block-1">
-						<button type="button" class="filter__price-ranger__button-1" id="price-min-button">
+				<fieldset class="catalog-form__price-ranger">
+					<legend class="catalog-form__title">Стоимость:</legend>
+					<div class="catalog-form__price-ranger__block-1">
+						<button type="button" class="catalog-form__price-ranger__button-1" id="price-min-button">
 							<span class="visually-hidden">от</span></button>
-						<button type="button" class="filter__price-ranger__button-2" id="price-max-button">
+						<button type="button" class="catalog-form__price-ranger__button-2" id="price-max-button">
 							<span class="visually-hidden">до</span></button>
-						<span class="filter__line-active"></span>
-						<span class="filter__line-noactive"></span>
+						<span class="catalog-form__line-active"></span>
+						<span class="catalog-form__line-noactive"></span>
 					</div>
-					<div class="filter__price-ranger__block-2">
-						<label for="price__field-min"><span class="filter__price-from">от</span></label>
-						<input class="filter__input__field-min" type="number" name="price_min" id="price__field-min" placeholder="от" value="0">
-						<label for="price__field-max"><span class="filter__price-to">до</span></label>
-						<input class="filter__input__field-max" type="number" name="price_max" id="price__field-max" placeholder="до" value="15000">
+					<div class="catalog-form__price-ranger__block-2">
+						<label for="catalog-form__field-min"><span class="filter__price-from">от</span></label>
+						<input class="catalog-form__input__field-min" type="number" name="price_min" id="price__field-min" placeholder="от" value="0">
+						<label for="catalog-form__field-max"><span class="filter__price-to">до</span></label>
+						<input class="catalog-form__input__field-max" type="number" name="price_max" id="price__field-max" placeholder="до" value="15000">
 					</div>
 				</fieldset>
 
 				<!-- вариант сетки -->
-				<fieldset class="filter__template-type">
-					<legend class="filter__title">Сетка:</legend>
-					<ul class="filter__teplate-list">
-						<li class="filter__template-item">
+				<fieldset class="catalog-form__template-type">
+					<legend class="catalog-form__title">Сетка:</legend>
+					<ul class="catalog-form__teplate-list">
+						<li class="catalog-form__template-item">
 							<label><input type="radio" name="template-type" value="adapt" checked>Адаптивная</label>
 						</li>
-						<li class="filter__template-item">
+						<li class="catalog-form__template-item">
 							<label><input type="radio" name="template-type" value="fixed" >Фиксированная</label>
 						</li>
-						<li class="filter__template-item">
+						<li class="catalog-form__template-item">
 							<label><input type="radio" name="template-type" value="pull" >Резиновая</label>
 						</li>
 					</ul>
 				</fieldset>
 
 				<!-- особенности макета -->
-				<fieldset class="filter__feature">
-					<legend class="filter__title">Особенности:</legend>
-					<ul class="filter__feature-list">
-						<li class="filter__feature-item">
+				<fieldset class="catalog-form__feature">
+					<legend class="catalog-form__title">Особенности:</legend>
+					<ul class="catalog-form__feature-list">
+						<li class="catalog-form__feature-item">
 							<label><input type="checkbox" name="slider" checked>Слайдер</label>
 						</li>
-						<li class="filter__feature-item">
+						<li class="catalog-form__feature-item">
 							<label><input type="checkbox" name="advanteges">Блок преимуществ</label>
 						</li>
-						<li class="filter__feature-item">
+						<li class="catalog-form__feature-item">
 							<label><input type="checkbox" name="news" checked>Новости</label>
 						</li>
-						<li class="filter__feature-item">
+						<li class="catalog-form__feature-item">
 							<label><input type="checkbox" name="gallery">Галерея</label>
 						</li>
-						<li class="filter__feature-item">
+						<li class="catalog-form__feature-item">
 							<label><input type="checkbox" name="trash">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
-				<div class="filter__button-wrapper" >
-					<button class="filter__button filter__button-accept" type="submit">Показать</button>
+				<div class="catalog-form__button-wrapper" >
+					<button class="catalog-form__button catalog-form__button-accept" type="submit">Показать</button>
 				</div>
 			</form>
-			<div class="filter-sort filter-sort__wrapper">
+			<div class="catalog-sort catalog-sort__wrapper">
 				<!-- сортировка выбранных макетов-->
-				<div class="filter-sort__types">
-					<h2 class="filter-sort__title">Сoртировать:</h2>
-					<ul class="filter-sort__list">
-						<li class="filter-sort__item">
-							<button class="filte-sort__button filter__button-price" type="button">По цене</button>
+				<div class="catalog-sort__types">
+					<h2 class="catalog-sort__title">Сoртировать:</h2>
+					<ul class="catalog-sort__list">
+						<li class="catalog-sort__item">
+							<button class="catalog-sort__button catalog__button-price" type="button">По цене</button>
 						</li>
-						<li class="filter-sort__item">
-							<button class="filter-sort__button filter__button-type" type="button">По типу</button>
+						<li class="catalog-sort__item">
+							<button class="catalog-sort__button catalog__button-type" type="button">По типу</button>
 						</li>
-						<li class="filter-sort__item">
-							<button class="filter-sort__button filter__button-name" type="button">По названию</button>
+						<li class="catalog-sort__item">
+							<button class="catalog-sort__button catalog__button-name" type="button">По названию</button>
 						</li>
 					</ul>
 				</div>
 
 				<!-- сортировка выбранных макетов 2-->
-				<ul class="filter-icons filter-icons__list">
-					<li class="filter-icons__item">
-						<button class="filter__button filter__button-up" type="button"><span class="visually-hidden">По убыванию</span></button>
+				<ul class="catalog-icons catalog-icons__list">
+					<li class="catalog-icons__item">
+						<button class="catalog__button catalog__button-up" type="button"><span class="visually-hidden">По убыванию</span></button>
 					</li>
-					<li class="filter-icons__item">
-						<button class="filter__button filter__button-down" type="button"><span class="visually-hidden">По возрастанию</span></button>
+					<li class="catalog-icons__item">
+						<button class="catalog__button catalog__button-down" type="button"><span class="visually-hidden">По возрастанию</span></button>
 					</li>
 				</ul>
 			</div>
 			<!-- Карточка товаров -->
-			<div class="filter-cards">
-					<ul class="filter-cards__list">
-						<li class="filter-cards__item">
+			<div class="catalog-cards">
+					<ul class="catalog-cards__list">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-1.png" alt="Шаблон магазина Седона" width="358" height="577">
 							</a>
 						</li>
-						<li class="filter-cards__item">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-2.png" alt="Шаблон магазина Пинк" width="358" height="578">
 							</a>
 						</li>
-						<li class="filter-cards__item">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-3.png" alt="Шаблон магазина Барбершоп" width="358" height="578">
 							</a>
 						</li>
-						<li class="filter-cards__item">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-4.png" alt="Шаблон магазина Мишка" width="358" height="578">
 							</a>
 						</li>
-						<li class="filter-cards__item">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-5.png" alt="Шаблон магазина Аплюс" width="358" height="578">
 							</a>
 						</li>
-						<li class="filter-cards__item">
+						<li class="catalog-cards__item">
 							<a href="#">
 								<img src="./../../images/decors/template-6.png" alt="Шаблон магазина Квас" width="358" height="578">
 							</a>
@@ -130,12 +130,20 @@
 					</ul>
 			</div>
 			<!-- Пагинация -->
-			<div class="filter-pagination">
-				<ol class="filter-pagination__list">
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>Следующая</li>
+			<div class="catalog-pagination">
+				<ol class="catalog-pagination__list">
+					<li class="catalog-pagination__item">
+						<a class="catalog-pagination__btn catalog-pagination__btn--current">1</a>
+					</li>
+					<li class="catalog-pagination__item">
+						<a class="catalog-pagination__btn" href="">2</a>
+					</li>
+					<li class="catalog-pagination__item">
+						<a class="catalog-pagination__btn" href="">3</a>
+					</li>
+					<li class="catalog-pagination__item">
+						<a class="catalog-pagination__btn catalog-pagination__btn--next" href="">Следующая</a>
+					</li>
 				</ol>
 			</div>
 		</div>

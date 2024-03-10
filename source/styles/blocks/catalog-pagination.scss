@@ -1,0 +1,56 @@
+@import './../global/variables.scss';
+
+.catalog-pagination {
+  grid-area: pagin;
+  margin-bottom: 60px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    height: 50px;
+    margin-right: 11px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__btn {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $base-color-text;
+    padding: 17px 20px 15px 20px;
+    border-radius: 3px;
+    background-color: $base-color-background;
+  }
+
+  &__btn:hover {
+    background-color: $base-background-button-filter-focus;
+  }
+
+  &__btn:active {
+    color: $special-color-btn-active;
+    background-color: $base-background-button-filter-active;
+  }
+
+  &__btn--next {
+    padding: 17px 77px 15px 77px;
+  }
+
+  &__btn--current {
+    outline: 3px solid $special-pagin-btn-border;
+    outline-offset: -3px;
+    border-radius: 3px;
+    background-color: $light-color-text;
+    pointer-events: none;
+  }
+}
