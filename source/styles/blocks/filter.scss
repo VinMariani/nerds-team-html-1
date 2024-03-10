@@ -1,5 +1,5 @@
 @import './../global/variables.scss';
-@import './../global/fonts.scss';
+/* @import './../global/fonts.scss'; */
 
 .filter {
     /* margin-top: 55px;
@@ -13,6 +13,7 @@
         'form sort sort'
         'form card card'
         'form pagin pagin';
+        /* column-gap: 47px; */
     }
 
     &__title {
@@ -183,8 +184,7 @@
 
 .filter-form {
     grid-area: form;
-    margin-right: 124px;
-    width: 260px;
+    /* margin-right: 124px; */
     background-color: #faf4b6;
 }
 
@@ -241,22 +241,16 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 42px;
         margin-bottom: -32px;
     }
 
     &__item {
-        width: 358px;
-        height: 618px;
-        margin-right: 40px;
-        margin-bottom: 32px;
         padding-top: 40px;
+        margin-bottom: 32px;
         border: 2px solid red;
-    }
-    
-    &__item:nth-child(2n) {
-        margin-right: 0;
     }
 }
 
