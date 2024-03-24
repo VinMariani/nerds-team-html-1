@@ -3,44 +3,104 @@
 .catalog-sort {
   &__wrapper {
       grid-area: sort;
-      display: flex;
-      background-color: #c2f4be;
-  }
-
-  &__types {
-      display: flex;
-      border: 2px solid rgb(102, 40, 236);
-  }
-
-  &__title {
-      margin: 0;
-  }
-
-  &__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-  }
-
-  &__button {
-      font-family: Roboto;
-      color: rgb(0, 0, 0);
-      font-size: 14px;
-      line-height: 18px;
-      text-align: left;
-      text-transform: uppercase;
-      border: none;
-      background: none;
+      display: flex; 
+      justify-content: space-between;
+      margin-bottom: 55px;
   }
 }
 
-.catalog-icons {
+  &__title {
+      margin: 0;
+      display: block;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+
   &__list {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      display: flex;
+      display: flex; 
+      gap: 25px;
+      justify-content: space-between;      
+      align-items: center;
       margin-left: auto;
+      min-height: 100%;
+    }
+
+  &__button {   
+      font-family: Roboto;
+      color: rgba(238, 238, 238, 1);
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      border: none;
+      background: none;
+      cursor: pointer;
+  }
+
+  &__button--current {
+    font-family: Roboto;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+  }
+
+  &__button:active {
+    font-family: Roboto;
+    color: #D5D5D5;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+}
+}
+
+.catalog-icons {
+
+  &__list {
+      max-width: 40px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+      justify-content: space-between;
+      align-items: center;
+    //   margin-left: auto;
+      min-height: 100%;
+
+  }
+
+  &__button {
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__button-up {
+    background-image: url('./../../images/icons/down-icon.svg');
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px;
+  }
+
+  &__button-down {
+    background-image: url('./../../images/icons/up-icon.svg');
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 10px;
   }
 }

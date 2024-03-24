@@ -1,22 +1,114 @@
 @import './../global/variables.scss';
 
 .catalog-cards {
-  grid-area: card;
-  margin-bottom: 55px;
-  
-  &__list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 42px;
-      margin-bottom: -32px;
-  }
+	grid-area: card;
+	margin-bottom: 55px;
 
-  &__item {
-      padding-top: 40px;
-      margin-bottom: 32px;
-      border: 2px solid red;
-  }
+	
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 42px;
+		margin-bottom: -32px;
+	}
+
+	&__item {
+		padding-top: 40px;
+		margin-bottom: 32px;
+		width: 358px;
+		height: 578px;
+		//   overflow: hidden;
+		//   border: 2px solid red;
+	}
+
+	&__hover {
+		width: 360px;
+		min-height: 230px;
+		background-color: #EEEEEE;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+	}
+	
+	&__hover__title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 12px;
+	}
+
+	&__hover__text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 18px;
+		color: #666666;
+		text-align: center;
+		max-width: 225px;
+		margin: 0;
+		margin-bottom: 32px;
+	}
+
+	&__hover__btn {
+		background-color: #FB565A;
+		min-height: 50px;
+		min-width: 200px;
+		color: #FFF;
+		border-radius: 3px;
+		border: none;
+		cursor: pointer;
+	}
+
+	&__hover__price {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 18px;
+		color: #666666;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+
+//   &__list:first-child::before {
+// 	content: "";
+// 	position: absolute;
+// 	width: 358px;
+// 	height: 40px;
+// 	background-color: #4D4D4D;
+// }
+
+	&__list:first-child::before {
+		content: "";
+		position: absolute;
+		width: 358px;
+		height: 40px;
+		background-image: url('./../../images/decors/cards/card-line1.svg');
+	}
+
+	// &__item:not(:first-of-type):before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 358px;
+	// 	height: 40px;
+	// 	top: 399px;
+	// 	background-image: url('./../../images/decors/cards/card-line2.svg');
+	// }
+
+
+//   &__item::before {
+// 		content: "";
+// 		position: absolute;
+// 		width: 355px;
+// 		height: 40px;
+// 		background-color: #4D4D4D;
+//   }
+
+
+
 }
